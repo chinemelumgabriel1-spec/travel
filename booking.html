@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Travel<span>around the world</span></div>
+        <nav>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="booking.html">Bookings</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>   
+        </nav>
+    </header>
+
+      <section class="hero page-hero">
+    <div class="hero-content">
+        <h1>
+            Book Your Trip
+            <br>
+            <span><small>AROUND THE WORLD</small></span>
+        </h1>
+        <p class="tagline">Explore. Dream. Discover</p>
+        <p> Pick a place and see the package that go there</p>
+    </div>
+</section>
+
+    <main>
+        <section class="form-section">
+            <form class="booking-form" >
+                <fieldset>
+                    <legend>Traveller Details</legend>
+
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="080XXXXXXXX" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Trip Details</legend>
+
+                    <label for="booking-type">Destination</label>
+                    <select id="booking-type" name="booking-type" required>
+                        <option value="greece">Greece</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="tokyo">Tokyo, Japan</option>
+                        <option value="new-york">New York, USA</option>
+                    </select>
+
+                   <div class="plan-options">
+                    <label class="plan-option">
+                    <input type="radio" name="plan" value="economy">
+                    <span><strong>Economy</strong>
+                    <span class="price">$499 per person</span>
+                    </span>
+                   </label>
+
+                     <label class="plan-option">
+                    <input type="radio" name="plan" value="premium"> 
+                     <span><strong>Premium</strong>
+                     <span class="price">$899 per person</span>
+                     </span>
+                    </label>
+
+                    <label class="plan-option">
+                    <input type="radio" name="plan" value="Business"> 
+                     <span><strong>Business</strong>
+                     <span class="price">$1,899 per person</span>
+                     </span>
+                     </label>
+
+                     <label class="plan-option">
+                    <input type="radio" name="plan" value="Luxury"> 
+                     <span><strong>Luxury</strong>
+                     <span class="price">$2,899 per person</span>
+                     </span>
+                    </label>
+                   </div>
+
+                    <label for="dapart">Departure Date</label>
+                    <input type="date"  name="dapart">
+
+                    <label for="return">Return Date</label>
+                    <input type="date"  name="return">
+
+                    <label for="guests">Travellers</label>
+                    <input type="number" name="guests" min="1" max="20" value="1" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extras</legend>
+                    <label for="message">Special Requests</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any special requests? (optional)"></textarea>
+
+                </fieldset>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

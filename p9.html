@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1d5db5">
+  <title>Destinations | Travel Around the World</title>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Travel Around the World home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M3 13.3 29 3 19 29l-4.2-10.8L3 13.3Z" stroke="white" stroke-width="2.6" stroke-linejoin="round"/><path d="m14.8 18.2 7.5-8" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+        <span><span class="brand-name">TRAVEL</span><span class="brand-sub">AROUND THE WORLD</span></span>
+      </a>
+      <div class="links"><a href="#">Home</a><a href="#">Packages</a><a class="active" href="#destinations">Destinations</a><a href="#">Bookings</a><a href="#">About Us</a><a href="#">Contact</a></div>
+      <a class="signin" href="#">Sign In <span aria-hidden="true">♙</span></a>
+    </nav>
+    <div class="hero-copy">
+      <h1>OUR DESTINATIONS</h1>
+      <div class="script">Explore. Dream. Discover.</div>
+      <p>Pick a place and see the packages that go there.</p>
+    </div>
+  </header>
+  <main id="destinations">
+    <form class="search-panel" role="search" onsubmit="event.preventDefault(); filterCards();">
+      <label for="destination-search">Search a destination</label>
+      <input id="destination-search" type="search" placeholder="e.g. Japan" autocomplete="off">
+      <button class="primary" type="submit">Search</button>
+    </form>
+    <div class="filters" aria-label="Filter destinations">
+      <button class="filter selected" data-region="All">All</button><button class="filter" data-region="Europe">Europe</button><button class="filter" data-region="Asia">Asia</button><button class="filter" data-region="Americas">Americas</button><button class="filter" data-region="Islands">Islands</button>
+    </div>
+    <section class="featured" aria-label="Featured destination">
+      <div class="photo japan">Photo: Japan</div>
+      <div class="featured-copy">
+        <p class="eyebrow">FEATURED DESTINATION</p><h2>Japan</h2>
+        <p>Temples, cherry blossom and neon-lit cities, with easy rail travel between them.</p>
+        <p class="meta">Best time: Mar - May</p><p class="meta">8 Days / 7 Nights from $2,199 per person</p>
+        <button class="primary view" type="button">View Packages</button>
+      </div>
+    </section>
+    <section aria-labelledby="all-title">
+      <h2 id="all-title" class="section-title">ALL DESTINATIONS</h2>
+      <div class="grid" id="destination-grid">
+        <article class="card" data-region="Europe"><div class="card-photo greece">Photo: Greece</div><div class="card-copy"><h3>Greece</h3><p class="region"><span class="pin">♧</span>Europe</p><p class="desc">White villages, blue domes and warm seas.</p><p class="best">Best time: May - Oct</p><div class="price"><small>From</small>$1,299</div><button class="arrow" aria-label="View Greece packages">→</button></div></article>
+        <article class="card" data-region="Islands"><div class="card-photo maldives">Photo: Maldives</div><div class="card-copy"><h3>Maldives</h3><p class="region"><span class="pin">♧</span>Islands</p><p class="desc">Overwater villas and clear lagoons.</p><p class="best">Best time: Nov - Apr</p><div class="price"><small>From</small>$1,599</div><button class="arrow" aria-label="View Maldives packages">→</button></div></article>
+        <article class="card" data-region="Americas"><div class="card-photo canada">Photo: Canada</div><div class="card-copy"><h3>Canada</h3><p class="region"><span class="pin">♧</span>Americas</p><p class="desc">Mountain lakes and alpine trails.</p><p class="best">Best time: Jun - Sep</p><div class="price"><small>From</small>$1,799</div><button class="arrow" aria-label="View Canada packages">→</button></div></article>
+        <article class="card" data-region="Asia"><div class="card-photo japan-small">Photo: Japan</div><div class="card-copy"><h3>Japan</h3><p class="region"><span class="pin">♧</span>Asia</p><p class="desc">Temples, cherry blossom and city lights.</p><p class="best">Best time: Mar - May</p><div class="price"><small>From</small>$2,199</div><button class="arrow" aria-label="View Japan packages">→</button></div></article>
+        <article class="card" data-region="Asia"><div class="card-photo indonesia">Photo: Indonesia</div><div class="card-copy"><h3>Indonesia</h3><p class="region"><span class="pin">♧</span>Asia</p><p class="desc">Rice terraces, beaches and culture.</p><p class="best">Best time: Apr - Oct</p><div class="price"><small>From</small>$1,099</div><button class="arrow" aria-label="View Indonesia packages">→</button></div></article>
+        <article class="card" data-region="Asia"><div class="card-photo uae">Photo: UAE</div><div class="card-copy"><h3>UAE</h3><p class="region"><span class="pin">♧</span>Asia</p><p class="desc">Skyscrapers, desert safaris and shopping.</p><p class="best">Best time: Nov - Mar</p><div class="price"><small>From</small>$1,399</div><button class="arrow" aria-label="View UAE packages">→</button></div></article>
+        <article class="card" data-region="Europe"><div class="card-photo switzerland">Photo: Switzerland</div><div class="card-copy"><h3>Switzerland</h3><p class="region"><span class="pin">♧</span>Europe</p><p class="desc">Snowy peaks and scenic train rides.</p><p class="best">Best time: Jun - Sep</p><div class="price"><small>From</small>$2,099</div><button class="arrow" aria-label="View Switzerland packages">→</button></div></article>
+        <article class="card" data-region="Europe"><div class="card-photo france">Photo: France</div><div class="card-copy"><h3>France</h3><p class="region"><span class="pin">♧</span>Europe</p><p class="desc">Paris, vineyards and the Riviera.</p><p class="best">Best time: Apr - Jun</p><div class="price"><small>From</small>$1,499</div><button class="arrow" aria-label="View France packages">→</button></div></article>
+      </div>
+    </section>
+    <section class="cta"><h2>Don't see your dream place?</h2><p>Tell us where you want to go and we'll plan it with you.</p><a href="#">Contact Us</a></section>
+  </main>
+  <footer>© 2026 Travel Around the World. All rights reserved.</footer>
+</body>
+</html>
+
