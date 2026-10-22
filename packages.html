@@ -8,6 +8,12 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<style>
+    .hero {
+    background: linear-gradient(rgba(0, 40, 100, 0.45), rgba(0, 40, 100, 0.45)),
+                url('images/packages.jpg') center/cover no-repeat;
+                }
+</style>
 </head>
 <body>
     <header>
@@ -15,7 +21,7 @@
         <nav>
            <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="packages.html">Packages</a></li>
+            <li><a href="packages.html" class="active">Packages</a></li>
             <li><a href="destination.html">Destination</a></li>
             <li><a href="booking.html">Bookings</a></li>
             <li><a href="about.html">About us</a></li>
@@ -24,17 +30,21 @@
         </nav>
     </header>
 
-     <section class="hero-1">
+    <section class="hero">
     <div class="hero-content">
         <h1>
-            OUR PACKAGES
+            TRAVEL
+            <br> 
+            <span><small>AROUND THE WORLD</small></span>
         </h1>
-        <p class="tagline-1">Explore. Dream. Discover</p>
-        <p> Exclusive travel packages to the world's most breathtaking destination</p>
+        <p class="tagline">Explore. Dream. Discove</p>
+        <p> Exclusive travel packages to the <br> world's mst breathtaking destination</p>
+        <a href="packages.html" class="btn">Explore Packages</a>
     </div>
 </section>
 
-<section class="search-wrapper">
+<div class="content">
+    <section class="search-wrapper">
     <div class="tabs">
          <button >Destination</button>
          <button>Price range</button>
@@ -272,5 +282,6 @@
    <footer>
     <p>&copy; 2026 Travel Around the World. All rights reserved.</p>
   </footer>
+</div>
 </body>
 </html>

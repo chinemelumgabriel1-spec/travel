@@ -5,20 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+      .hero {
+    background: linear-gradient(rgba(0, 40, 100, 0.45), rgba(0, 40, 100, 0.45)),
+                url('images/contact.jpg') center/cover no-repeat;
+}
+    </style>
 </head>
 <body>
    <header>
         <div class="logo">Travel<span>around the world</span></div>
         <nav>
            <ul>
-            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="packages.html">Packages</a></li>
             <li><a href="destination.html">Destination</a></li>
             <li><a href="booking.html">Bookings</a></li>
             <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
            </ul>   
         </nav>
     </header>
+
+    <section class="hero page-hero">
+    <div class="hero-content">
+        <h1>
+            CONTACT US
+        </h1>
+        <p class="tagline">Explore. Dream. Discover</p>
+        <p>Question about a trip? We'd love to hear from you.</p>
+    </div>
+</section>
+
+<div class="content">
+  <section class="benefits" >
+      <div class="benefit-grid">
+
+        <article class="benefit panel">
+          <span class="benefit-icon">➤</span>
+          <div><h3>Address</h3>
+            <p>[YOUR ADDRESS]</p>
+          </div></article>
+
+        <article class="benefit panel">
+          <span class="benefit-icon">✓</span>
+          <div><h3>Phone</h3>
+            <p>[YOUR PHONE]</p>
+          </div></article>
+
+        <article class="benefit panel">
+          <span class="benefit-icon">♧</span>
+          <div><h3>Email</h3>
+            <p>[YOUR EMAIL]</p>
+          </div></article>
+
+        <article class="benefit panel">
+          <span class="benefit-icon">▣</span>
+          <div><h3>Opening hours</h3>
+            <p>[OPENING HOURS]</p>
+          </div></article>
+      </div>
+    </section>
+
+     <main>
+        <section class="form-section1">
+            <form class="booking-form" >
+                    <legend>Traveller Details</legend>
+
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="080XXXXXXXX" required>
+
+                    <label for="booking-type">subject</label>
+                    <select id="booking-type" name="booking-type" required>
+                        <option value="greece">Greece</option>
+                        <option value="paris">Paris, France</option>
+                        <option value="tokyo">Tokyo, Japan</option>
+                        <option value="new-york">New York, USA</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any special requests? (optional)"></textarea>
+
+
+                <button type="submit">Send Message</button>
+            </form>
+    </section>
+    </main>
+
+    <section class="map-section">
+            <h2>Find Us</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31700!2d6.9!3d6.02!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDEnMTIuMCJOIDbCsDU0JzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+           </section>
+
+<footer>
+    <p>&copy; 2026 Travel Around the World. All rights reserved.</p>
+  </footer>
+
+</div>
 </body>
 </html>

@@ -8,13 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        .content {
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-top: -23px;
+      margin-bottom: -10px;
+       }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">Travel<span>around the world</span></div>
         <nav>
            <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="packages.html">Packages</a></li>
             <li><a href="destination.html">Destination</a></li>
             <li><a href="booking.html">Bookings</a></li>
@@ -28,7 +35,7 @@
     <div class="hero-content">
         <h1>
             TRAVEL
-            <br>
+            <br> 
             <span><small>AROUND THE WORLD</small></span>
         </h1>
         <p class="tagline">Explore. Dream. Discove</p>
@@ -36,7 +43,9 @@
         <a href="packages.html" class="btn">Explore Packages</a>
     </div>
 </section>
-<section class="search-wrapper">
+
+<div class="content">
+    <section class="search-wrapper">
     <div class="tabs">
          <button class="active" type="button">Flights</button>
          <button>Hotels</button>
@@ -126,7 +135,7 @@
         <div class="card-footer">
         <span class="price">&dollar;1,299 <br>per person</span>
         <span class="rating"><span class="star">&starf;</span> 4.8</span>
-        <span><a href="#" class="arrow" aria-label="view Greek Islands Escape">&rarr;</a></span>
+        <span><a href="packages.html" class="arrow" aria-label="view Greek Islands Escape">&rarr;</a></span>
         </div>
     </div>
     </div>
@@ -247,24 +256,27 @@
 
     <div class="steps">
         <div class="step">
-           <div class="step-text"> <img src="" alt="j">
+           <img src="" alt="j">
+           <div class="step-text">
             <h3>1. Choose Destination</h3>
             <p> Pick your dream <br> destination</p></div>
         </div>
 
          <div class="step">
-            <div class="step-text"><img src="" alt="rn">
+            <img src="" alt="rn">
+            <div class="step-text">
             <h3>2. Select Package</h3>
             <p>Choose the best <br> package for you</p></div>
         </div>
 
          <div class="step">
-            <div class="step-text"><img src="" alt="rn">
+            <img src="" alt="rn">
+            <div class="step-text">
             <h3>3. Make Payment</h3>
             <p>Secure your booking <br>with easy payment.</p></div>
         </div>
 
-         <class="step">
+         <div class="step">
             <img src="" alt="4rj">
         <div class="step-text"><h3>4. Enjoy Yourr Trip</h3>
             <p> Pack your bags and <br>make memories!</p> </div>
@@ -306,5 +318,7 @@
 <footer>
     <p>&copy; 2026 Travel Around the World. All rights reserved.</p>
     </footer>
+
+</div>
 </body>
 </html>
